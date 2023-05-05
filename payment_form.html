@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <style>
+     *{
+        box-sizing: border-box;
+     }
+     body{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 17px;
+        margin: 15px 30px;
+        padding: 25px;
+     }
+     .container{
+        background-color: #f2f2f2;
+        padding: 5px 20px 15px 20px;
+        border: 1px solid lightgrey;
+        border-radius: 5px;
+        margin: 20px 20px;
+     }
+     input[type="text"],
+     input[type="password"],
+     input[type="email"],
+     input[type="number"],
+     input[type="date"],
+     input[type="pincode"],
+     textarea,
+     select{
+        background-color: #f2f2f2;
+        width: 100%;
+        padding: 10px;
+        border: 1px solid rgb(155, 153, 153);
+        border-radius: 5px;
+     }
+     fieldset{
+        border: 1px solid rgb(155, 153, 153);
+        border-radius: 5px;
+     }
+     .mainheading{
+        text-align: center;
+        color: aliceblue;
+        background-color: #062e58;
+        padding: 5px;
+        margin-left: 340px;
+        margin-right: 340px;
+        border: none;
+        border-radius: 10px;
+     }
+    
+     .note{
+        color: red ;
+        opacity: 0.7;
+     }
+     input[type=submit]{
+        color: aliceblue;
+        background-color:#062e58;
+        margin-left: 850px;
+        padding: 15px;
+        border: none;
+        border-radius: 10px;
+
+     }
+     h4{
+        color: aliceblue;
+        background-color:#062e58 ;
+        margin-right: 850px;
+        padding: 15px;
+        border: none;
+        border-radius: 10px;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <h2 class="mainheading">Payment Form</h2>
+            <h6 class="note">Note:required Fields Are Followed By *</h6>
+            <h2>Contact Information</h2>
+            <p>Name:* <input type="text"  required name="Name" placeholder="sultan"></p><!--name is the name of value which goes to server-->
+            <fieldset>
+                <legend>Gender</legend><!--legend name the group(male and female)-->
+            <p>
+                Male <input type="radio" name="Gender" id="male">
+                Female <input type="radio" name="Gender" id="female"><!--name must be same in radio buton attribute-->
+            </p>
+            </fieldset><!--fieldset is used to make a frame around the group-->
+            <p>Address: <textarea name="Address" id="Address" cols="150" rows="5"></textarea></p>
+            <p>Email: <input type="email" name="Email" id="Email" required></p>
+            <P>Pincode <input type="number" name="Pincode" id="Pincode"required></P>
+            <h2>Payment Information</h2>
+            <p>Card Type:*
+                <select name="Card_Type" id="Card_Type"required>
+                <option value="">--select a card type--</option>
+                <option value="Visa">visa</option>
+                <option value="master card">master card</option>
+                <option value="jazzcash">jazzcash</option>
+                </select>
+            </p>
+            <p>
+                Card number <input type="number" name="card number" id="card number">
+            </p>
+            <p>
+                Expiration Date <input type="date" name="Expiraton date" id="Expiration date">
+            </p>
+            <p>password <input type="password" name="password" id="password"></p>
+            <input type="submit" value="Pay Now">
+    
+        </form>
+        <br>
+        <a class="gohome"href="home.html"><h4>Go Home</h4></a>
+    </div>
+   
+    
+</body>
+</html>

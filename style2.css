@@ -1,0 +1,13 @@
+*{
+    background-color: azure;
+    margin: 40px;
+}
+
+.title{
+    color: rgb(143, 10, 10);
+}
+.imgs{
+    border: solid 4px;
+    border-color: rgb(143, 10, 10);
+    border-radius: 5px;
+}
